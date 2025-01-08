@@ -1,2 +1,2 @@
-# FBLA-Web-Design
-FBLA team project for the website design event
+# MECAZON-team-client
+A default repo for student team client
