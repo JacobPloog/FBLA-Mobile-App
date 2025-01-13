@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper {
-  background-color: black;
+  background-color: white;
   min-width: 480px;
   max-width: 480px;
   min-height: 700px;
@@ -12,7 +12,16 @@ body {
   overflow: scroll;
 }
 
-.buttons {
+.titleBg {
+  background-color: #036d19;
+  height: 60px;
+}
+
+.title {
+  color: white;
+}
+
+.subjects {
   color: green;
   display: flex;
   flex-direction: column;
@@ -20,6 +29,7 @@ body {
 }
 
 button {
+    background-color: ;
   width: 220px;
   height: 100px;
   margin: 20px;
