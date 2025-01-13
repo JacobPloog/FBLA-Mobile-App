@@ -1,6 +1,6 @@
-// src/App.jsx
-import Navbar from "./components/Navbar";
-// import Home from "./pages/Home";
+// // src/App.jsx
+// import Navbar from "./components/Navbar";
+// // import Home from "./pages/Home";
 import styles from "./styles/Home.module.css";
 
 import "./App.css";
@@ -8,11 +8,19 @@ export default function App() {
   return (
     <>
       <div className={styles.wrapper}>
-        <Navbar />
-        <p className={styles.text}>
-          This is the body
+        <div className={styles.titleBg}>
+          <p className={styles.title}>Math</p>
+        </div>
+        <p className={styles.subjects}>
+          <button className={styles.test}>Test 1</button>
+          <button>Quiz 1</button>
+          <button>Quiz 1</button>
         </p>
-        <Navbar />
+        <p className={styles.subjects}>
+          <button className={styles.test}>Test 1</button>
+          <button>Quiz 1</button>
+          <button>Quiz 1</button>
+        </p>
       </div>
     </>
   );
