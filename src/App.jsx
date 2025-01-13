@@ -1,5 +1,6 @@
 import { Router, Routes, Route } from "react-router-dom";
 import styles from "./styles/Home.module.css";
+import Quiz from "./components/Quiz.jsx";
 
 import "./App.css";
 export default function App() {
