@@ -2,6 +2,7 @@
 // import Navbar from "./components/Navbar";
 // // import Home from "./pages/Home";
 import styles from "./styles/Home.module.css";
+import Quiz from "./components/Quiz.jsx";
 
 import "./App.css";
 export default function App() {

@@ -9,5 +9,9 @@ export default function Quiz() {
     },
   ];
 
-  return <>{questions.question}</>;
+    return (
+      <>
+        <h1>{questions[0].question}</h1>
+      </>
+    );
 }
