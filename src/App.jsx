@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 import styles from "./styles/Home.module.css";
 
 import "./App.css";
@@ -12,7 +12,7 @@ export default function App() {
         <p className={styles.subjects}>
           <Router>
             <Routes>
-              <button className={styles.test}>Test 1</button>
+              <button className={styles.test}></button>
               <button className={styles.quiz}>Quiz 1</button>
               <button className={styles.quiz}>Quiz 1</button>
             </Routes>
