@@ -9,9 +9,16 @@ export default function Quiz() {
     },
   ];
 
-    return (
-      <>
-        <h1>{questions[0].question}</h1>
-      </>
-    );
+  return (
+    <>
+      <h1>{questions[0].question}</h1>
+      <div>
+        {questions[0].options.map((option) => {
+          <>
+            <button>{option}</button>
+          </>
+        })}
+      </div>
+    </>
+  );
 }
