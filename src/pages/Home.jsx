@@ -23,11 +23,11 @@ export default function Home() {
         <p className={styles.subjects}>
           <button className={styles.test}>Test 1</button>
           <div className={styles.quizWrapper}>
-            <button className={styles.mathQuizButton}></button>
+            <Link to="/quiz/math/1"><button className={styles.mathQuizButton}></button></Link>
             <p>Quiz 1</p>
           </div>
           <div className={styles.quizWrapper}>
-              <Link to="/quiz/math"><button className={styles.mathQuizButton}></button></Link>
+            <Link to="/quiz/math/2"><button className={styles.mathQuizButton}></button></Link>
             <p>Quiz 2</p>
           </div>
         </p>

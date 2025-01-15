@@ -46,7 +46,7 @@ body {
 .answers {
     animation: unhover 0.3s ease-in;
     width: 70%;
-    height: 17vh;
+    height: 13vh;
     font-size: 2rem;
 }
 
