@@ -16,8 +16,9 @@ export default function Quiz() {
       // math: {
         // 1: [
           // {
-            question: "What does 1 + 1 equal;",
-            options: ["1", "2", "3", "4"],
+            title: "Math Quiz 1:",
+            question: "What does 1 + 1 equal?",
+            options: ["a. 1", "b. 2", "c. 3", "d. 4"],
             correctAnswer: "2",
           // }
         // ]
@@ -44,25 +45,14 @@ export default function Quiz() {
 
   return (
     <>
-      <h1>{questions[0].question}</h1>
+    <div className={Styles.wrapper}>
+      <h1 className={Styles.question}>{questions[0].title}<br/>{questions[0].question}</h1>
       <div className={Styles.options }>
         {questions[0].options.map((option) => {
-            let buttonColor = {backgroundColor: "gray"}
-            
-              if (selectedOption) {
-                if (selectedOption === option) {
-                  if (isCorrect) {
-                    buttonColor = {backgroundColor: "lightgreen"}    
-                  } else {
-                    buttonColor = {backgroundColor: "lightcoral"}
-                  }
-                }
-              }
-            return(
-               <button onClick={checkIfCorrect} key={option} style={ buttonColor }>{option}</button>
-            )
+            return <button onClick={checkIfCorrect}>{option}</button>
         })}
       </div>
+    </div>
     </>
   );
 }
