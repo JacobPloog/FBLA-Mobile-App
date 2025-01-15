@@ -8,6 +8,7 @@ export default function Quiz() {
 
   const [isCorrect, setIsCorrect] = useState(null);
   const [isOver, setIsOver] = useState(false);
+  const [isCompleted, setIsCompleted] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null);
 
   const [questionNum, setQuestionNum] = useState(0);
@@ -68,11 +69,20 @@ export default function Quiz() {
     if (isOver) {
       navigate("/")
     }
+    if (isCompleted) {
+      navigate("/")
+    }
+    
+    
     setIsCorrect(null)
     if (selectedOption === quiz[questionNum].correctAnswer) {
       setIsCorrect(true);
       // nextPage()
       console.log("Correct");
+      
+      if (questionNum + 1 >= quiz.length) {
+        setIsCompleted(true);
+      }
     } else {
       setIsCorrect(false);
       console.log("Incorrect");
@@ -92,9 +102,6 @@ export default function Quiz() {
       if (isCorrect) {
         setQuestionNum(questionNum + 1);
         setIsCorrect(null);
-      }
-      if(questionNum + 1 > 1) {
-        navigate('/')
       }
     }
   }
@@ -127,6 +134,7 @@ export default function Quiz() {
       <p>{questionNum + 1}/{quiz.length}</p>
       <p>Health: {health}</p>
       <p>{isOver? "NO MORE LIVES RESTART": ""}</p>
+      <p>{isCompleted? "Test Completed": ""}</p>
     </div>
     </>
   );
