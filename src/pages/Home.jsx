@@ -2,13 +2,13 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import Logo from "../Logo.jsx";
 import Mascot from "../Mascot.jsx";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 // import Img1 from "./Img1.png";
 
 export default function Home() {
   const navigate = useNavigate();
   const quizButton = () => {
-    navigate("/quiz");
+    navigate("/quiz/math");
   };
   return (
     <>
@@ -26,14 +26,11 @@ export default function Home() {
         <p className={styles.subjects}>
           <button className={styles.test}>Test 1</button>
           <div className={styles.quizWrapper}>
-            <button
-              onClick={quizButton}
-              className={styles.mathQuizButton}
-            ></button>
+            <button className={styles.mathQuizButton}></button>
             <p>Quiz 1</p>
           </div>
           <div className={styles.quizWrapper}>
-            <button className={styles.mathQuizButton}></button>
+              <Link to="/quiz/math"><button className={styles.mathQuizButton}></button></Link>
             <p>Quiz 1</p>
           </div>
         </p>

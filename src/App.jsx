@@ -8,7 +8,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Quiz" element={<Quiz />} />
+        <Route path="/Quiz/:subject" element={<Quiz />} />
       </Routes>
     </BrowserRouter>
   );
