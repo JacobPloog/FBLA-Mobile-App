@@ -19,11 +19,11 @@ export default function Quiz() {
             title: "Math Quiz 1:",
             question: "What does 1 + 1 equal?",
             options: ["a. 1", "b. 2", "c. 3", "d. 4"],
-            correctAnswer: "2",
+            correctAnswer: "b. 2",
           // }
         // ]
-      }
-    // },
+      // }
+    },
   ];
 
   // let quiz = questions.find()
@@ -61,7 +61,7 @@ export default function Quiz() {
                 }
               }
             return(
-               <button onClick={checkIfCorrect} key={option} style={ [buttonColor, Styles.answers] }>{option}</button>
+               <button onClick={checkIfCorrect} key={option} className={Styles.answers} style={buttonColor}>{option}</button>
             )
         })}
       </div>
