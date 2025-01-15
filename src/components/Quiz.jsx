@@ -46,15 +46,26 @@ export default function Quiz() {
   return (
     <>
     <div className={Styles.wrapper}>
-      <h1 className={Styles.question}>{questions[0].title}<br/>{questions[0].question}</h1>
+      <h1 className={Styles.question}>{questions[0].question}<br/>{questions[0].question}</h1>
       <div className={Styles.options }>
         {questions[0].options.map((option) => {
-            return <button onClick={checkIfCorrect}>{option}</button>
+            let buttonColor = {backgroundColor: "gray"}
+            
+              if (selectedOption) {
+                if (selectedOption === option) {
+                  if (isCorrect) {
+                    buttonColor = {backgroundColor: "lightgreen"}    
+                  } else {
+                    buttonColor = {backgroundColor: "lightcoral"}
+                  }
+                }
+              }
+            return(
+               <button onClick={checkIfCorrect} key={option} style={ [buttonColor, Styles.answers] }>{option}</button>
+            )
         })}
       </div>
-    </div>
+      </div>
     </>
   );
 }
-
-// selectedOption === option? isCorrect? {backgroundColor: "lightgreen"} : {backgroundColor: "lightcoral"} : {backgroundColor: "gray"}
