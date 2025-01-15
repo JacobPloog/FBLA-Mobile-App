@@ -6,8 +6,9 @@ export default function Quiz() {
 
   const questions = [
     {
-      question: "What does 1 + 1 equal;",
-      options: ["1", "2", "3", "4"],
+      title: "Math Quiz 1:",
+      question: "What does 1 + 1 equal?",
+      options: ["a. 1", "b. 2", "c. 3", "d. 4"],
       correctAnswer: "2",
     },
   ];
@@ -28,12 +29,14 @@ export default function Quiz() {
 
   return (
     <>
-      <h1>{questions[0].question}</h1>
+    <div className={Styles.wrapper}>
+      <h1 className={Styles.question}>{questions[0].title}<br/>{questions[0].question}</h1>
       <div className={Styles.options }>
         {questions[0].options.map((option) => {
-            return <button onClick={checkIfCorrect}>{option}</button>
+          return <button className={Styles.answers} onClick={checkIfCorrect}>{option}</button>
         })}
       </div>
+    </div>
     </>
   );
 }

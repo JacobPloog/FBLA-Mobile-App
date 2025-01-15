@@ -50,7 +50,7 @@ body {
   border: 1px solid #1e96fc;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  background-image: url("https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&w=1200");
+  background-image: url("https://images.pexels.com/photos/6238068/pexels-photo-6238068.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
 }
 
@@ -96,19 +96,23 @@ body {
 .sciQuizButton:hover {
   background-color: whitesmoke;
   width: 230px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
 
 .hisQuizButton:hover {
   background-color: whitesmoke;
   width: 230px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
 .engQuizButton:hover {
   background-color: whitesmoke;
   width: 230px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
 .mathQuizButton:hover {
   background-color: whitesmoke;
   width: 230px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
 
 .test {
@@ -124,6 +128,7 @@ body {
 .test:hover {
   background-color: whitesmoke;
   height: 110px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
 
 input {

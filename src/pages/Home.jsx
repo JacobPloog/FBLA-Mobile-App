@@ -34,7 +34,7 @@ export default function Home() {
           </div>
           <div className={styles.quizWrapper}>
             <button className={styles.mathQuizButton}></button>
-            <p>Quiz 1</p>
+            <p>Quiz 2</p>
           </div>
         </p>
         <div className={styles.titleBg}>
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className={styles.quizWrapper}>
             <button className={styles.engQuizButton}></button>
-            <p>Quiz 1</p>
+            <p>Quiz 2</p>
           </div>
         </p>
         <div className={styles.titleBg}>
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div className={styles.quizWrapper}>
             <button className={styles.hisQuizButton}></button>
-            <p>Quiz 1</p>
+            <p>Quiz 2</p>
           </div>
         </p>
         <div className={styles.titleBg}>
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
           <div className={styles.quizWrapper}>
             <button className={styles.sciQuizButton}></button>
-            <p>Quiz 1</p>
+            <p>Quiz 2</p>
           </div>
         </p>
       </div>
