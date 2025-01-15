@@ -1,0 +1,11 @@
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+.incorrect {
+    background-color: lightcoral;
+}
